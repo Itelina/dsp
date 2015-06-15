@@ -37,8 +37,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
-
+Python 2 - installing v2.7 of python for now as most of the scientific community are still using v2.7. You can type in "python" in the command line to check the current version installed in the computer. 
 ---
 
 
