@@ -21,7 +21,13 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+'ls' provides a list of directory contents.
+'ls -a' include directory entrires whose names begin with a dot (.)
+'ls -l' lists in the long format.
+'ls-lh' uses unit suffixes; Bype, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the number of digits to three or less using base 2 for sizes. 
+
+'ls -al' include directory entries whose names begin with a dot (.) and list them in long format.
+'ls -alh' include directory entires whose names begin with a dot (.), lists them in long format, and represents the unit suffixes to represent size.
 
 ---
 
