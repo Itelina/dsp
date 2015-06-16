@@ -61,6 +61,5 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
-
+I will use Spyder for now since it came with the Anaconda package. Some interesting features are that it can run several python or ipython consoles simultaneously; it also has several tabs that lets you inspect/explore all your objects, variables, and files. Some useful keyboard shortcuts are: ctrl-F9 for run selection; ctrl-F5 for run; ⌘1 for comment/uncomment; ⌘4 and ⌘5 for block comment/unblock comment. I customized it through the "preferences" option in the "python" menu. 
 ---
