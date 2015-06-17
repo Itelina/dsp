@@ -18,16 +18,15 @@ These exercises are implemented with doctests, which are runnable tests inside d
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+A tuple is a one-dimensional, fixed-length, immutable sequence of Python objects - tuples are defined by (). Lists are variable-length and their contents can be modified - lists are defined by []. Tuples will work as keys in dictionaries, because the keys of a dict have to be immutable objects (hashability). 
 
 ---
-
 
 ---
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+Lists can have duplicates; sets contain only unique elements. Lists are ordered while sets are not ordered. Sets are significantly faster when it comes to determining if an object is present in the set (as in x in s), but are slower than lists when it comes to iterating over their contents (because sets are not ordered). The timeit module can be used to see which is faster for the particular situation.
 
 ---
 
@@ -36,7 +35,7 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+'Lambda' is an "anonymous" function or just simple functions consisting of a single statement, the result of which is the return value. They are defined using the lambda keyword.
 
 ---
 
