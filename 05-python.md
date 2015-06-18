@@ -43,7 +43,7 @@ An example use of lambda is :
   sorted(['foo', 'card', 'bar', 'aaaa', 'abab'], key=lambda x: len(set(x)))
 ```
   
-This function sorts string by the number of distinct letters in each string
+This function sorts string by the number of distinct letters in each string.
 
 ---
 
@@ -52,7 +52,36 @@ This function sorts string by the number of distinct letters in each string
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+List comprehensions allows for concisely forming a new list by filtering the elements of a collection and transforming the elements passing the filter in one concise expression. They take the basic form:
+  [*expr* for val in collection if *condition*]
+  
+An example using list comprehension is:
+```
+Celsius = [39.2, 36.5, 37.3, 37.8]
+Fahrenheit = [ ((float(9)/5)*x + 32) for x in Celsius ]
+Fahrenheit
+```
+
+The equivalent using  ```map``` is:
+```
+Celsius = [39.2, 36.5, 37.3, 37.8]
+Fahrenheit = map(lambda x: (float(9)/5)*x + 32, Celsius)
+Fahrenheit
+```
+
+As second example using list comprehension is:
+```
+Fib = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+newFibs = [x for x in fibs if x%2]
+newFibs
+```
+
+The equivalent using  ```filter``` is:
+```
+Fib = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+newFibs = filter(lambda x: x%2, Fib)
+newFibs
+```
 
 ---
 
