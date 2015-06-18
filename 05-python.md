@@ -39,9 +39,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 An example use of lambda is :
 
-'''
+```
   sorted(['foo', 'card', 'bar', 'aaaa', 'abab'], key=lambda x: len(set(x)))
-'''
+```
   
 This function sorts string by the number of distinct letters in each string
 
