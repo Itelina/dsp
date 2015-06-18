@@ -38,8 +38,12 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 'Lambda' is an "anonymous" function or just simple functions consisting of a single statement, the result of which is the return value. They are defined using the 'lambda' keyword. These functions are convenient for data analysis because 1) less typing and 2) many data transformation functions take functions as arguments. 
 
 An example use of lambda is :
-sorted(['foo', 'card', 'bar', 'aaaa', 'abab'], key=lambda x: len(set(x)))
-#sorts string by the number of distinct letters in each string
+
+'''
+  sorted(['foo', 'card', 'bar', 'aaaa', 'abab'], key=lambda x: len(set(x)))
+'''
+  
+This function sorts string by the number of distinct letters in each string
 
 ---
 
