@@ -129,9 +129,12 @@ def not_bad(s):
     """
     import re
     if re.search("not.*bad", s):
-       print s[0:re.search("not.*bad", s).start()] + "good" + s[(re.search("not.*bad", s).end()):]
+        a = s[0:re.search("not.*bad", s).start()]
+        b = "good"
+        c = s[(re.search("not.*bad", s).end()):]
+        print  a + b + c
     else:
-       print s
+        print s
 
 def front_back(a, b):
     """
