@@ -38,18 +38,14 @@ def fix_start(s):
 
 def mix_up(a, b):
     """
-    Given strings a and b, return a single string with a and b
-    separated by a space '<a> <b>', except swap the first 2 chars of
-    each string. Assume a and b are length 2 or more.
-
-    >>> mix_up('mix', 'pod')
-    'pox mid'
-    >>> mix_up('dog', 'dinner')
-    'dig donner'
-    >>> mix_up('gnash', 'sport')
-    'spash gnort'
-    >>> mix_up('pezzy', 'firm')
-    'fizzy perm'
+    def mix_up(a, b):
+    first = list(a)
+    second = list(b)
+    x = first[0:2] 
+    y = second[0:2]
+    first[0:2] = y
+    second[0:2] = x
+    print ''.join(first) + ' ' + ''.join(second)
     """
     raise NotImplementedError
 
