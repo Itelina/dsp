@@ -16,8 +16,8 @@ def match_ends(words):
     1
     """
     count = 0
-    for i in range(len(words)):
-        if len(words[i]) >= 2 and words[i][0] == words[i][-1]:
+    for word in words:
+        if len(word) >= 2 and word[0] == word[-1]:
             count += 1
     return count
 
