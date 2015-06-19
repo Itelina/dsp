@@ -152,4 +152,16 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(a)%2 != 0:
+        a1 = a[0:len(a)//2+1]
+        a2 = a[len(a)//2+1:]
+    else:
+        a1 = a[0:len(a)/2]
+        a2 = a[len(a)/2:]
+    if len(b)%2 != 0:
+        b1 = b[0:len(b)//2+1]
+        b2 = b[len(b)//2+1:]
+    else:
+        b1 = b[0:len(b)/2]
+        b2 = b[len(b)/2:]
+    print a1 + b1 + a2 + b2
