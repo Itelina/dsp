@@ -25,20 +25,14 @@ def both_ends(s):
 
 def fix_start(s):
     """
-    Given a string s, return a string where all occurences of its
-    first char have been changed to '*', except do not change the
-    first char itself. e.g. 'babble' yields 'ba**le' Assume that the
-    string is length 1 or more.
-
-    >>> fix_start('babble')
-    'ba**le'
-    >>> fix_start('aardvark')
-    'a*rdv*rk'
-    >>> fix_start('google')
-    'goo*le'
-    >>> fix_start('donut')
-    'donut'
-    """
+    b = s[0]
+    for i in range(1, len(s)):
+       if s[i] == s[0]:
+           b += '*' 
+       else:
+           b += s[i]
+   print b
+   """
     raise NotImplementedError
 
 
