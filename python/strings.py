@@ -4,38 +4,21 @@
 
 def donuts(count):
     """
-    Given an int count of a number of donuts, return a string of the
-    form 'Number of donuts: <count>', where <count> is the number
-    passed in. However, if the count is 10 or more, then use the word
-    'many' instead of the actual count.
-
-    >>> donuts(4)
-    'Number of donuts: 4'
-    >>> donuts(9)
-    'Number of donuts: 9'
-    >>> donuts(10)
-    'Number of donuts: many'
-    >>> donuts(99)
-    'Number of donuts: many'
+    if count < 10:
+        print 'Number of donuts:' + str(int(count))
+    else:
+        print 'Number of donuts: many'
     """
     raise NotImplementedError
 
 
 def both_ends(s):
     """
-    Given a string s, return a string made of the first 2 and the last
-    2 chars of the original string, so 'spring' yields 'spng'.
-    However, if the string length is less than 2, return instead the
-    empty string.
-
-    >>> both_ends('spring')
-    'spng'
-    >>> both_ends('Hello')
-    'Helo'
-    >>> both_ends('a')
-    ''
-    >>> both_ends('xyz')
-    'xyyz'
+    if len(str(s)) >= 2:
+        newstring = str(s)[:2] + str(s)[-2:]
+        print newstring
+    else:
+        print ""
     """
     raise NotImplementedError
 
