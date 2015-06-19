@@ -16,9 +16,9 @@ def donuts(count):
     'Number of donuts: many'
     """
     if count < 10:
-        print 'Number of donuts:' + str(int(count))
+        return 'Number of donuts:' + str(int(count))
     else:
-        print 'Number of donuts: many'
+        return 'Number of donuts: many'
 
 
 def both_ends(s):
@@ -37,9 +37,9 @@ def both_ends(s):
     
     if len(str(s)) >= 2:
         newstring = str(s)[:2] + str(s)[-2:]
-        print newstring
+        return newstring
     else:
-        print ""
+        return ""
     
 
 def fix_start(s):
@@ -64,7 +64,7 @@ def fix_start(s):
            b += '*' 
        else:
            b += s[i]
-   print b
+   return b
 
 def mix_up(a, b):
     """
@@ -87,7 +87,7 @@ def mix_up(a, b):
     y = second[0:2]
     first[0:2] = y
     second[0:2] = x
-    print ''.join(first) + ' ' + ''.join(second)
+    return ''.join(first) + ' ' + ''.join(second)
 
 def verbing(s):
     """
@@ -108,7 +108,7 @@ def verbing(s):
             s += 'ly'
         else:
             s += 'ing'
-    print s
+    return s
 
 def not_bad(s):
     """
@@ -132,9 +132,9 @@ def not_bad(s):
         a = s[0:re.search("not.*bad", s).start()]
         b = "good"
         c = s[(re.search("not.*bad", s).end()):]
-        print  a + b + c
+        return  a + b + c
     else:
-        print s
+        return s
 
 def front_back(a, b):
     """
@@ -164,4 +164,4 @@ def front_back(a, b):
     else:
         b1 = b[0:len(b)/2]
         b2 = b[len(b)/2:]
-    print a1 + b1 + a2 + b2
+    return a1 + b1 + a2 + b2
