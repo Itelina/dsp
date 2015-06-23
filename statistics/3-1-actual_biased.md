@@ -1,5 +1,6 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
+> The unbiased mean number of children under age 18 is 1.02. The biased mean number of children under age 18 is 2.40. 
 > Code below shows the calculations. 
 
 ```
@@ -41,5 +42,11 @@ NK_Bpmf
 thinkplot.PrePlot(2)
 thinkplot.Pmfs([NK_pmf, NK_Bpmf])
 thinkplot.Show(xlabel='Total Children', ylabel='PMF')
+
+UnBiasedMean = NK_pmf.Mean()
+BiasedMean = NK_Bpmf.Mean()
+
+UnBiasedMean
+BiasedMean
 
 ```
