@@ -2,7 +2,9 @@
 
 First babies tend to be slightly lighter than other babies. The average weight of firstborn babies seen from this dataset is at 7.2 lbs while the average weight of other babies are 7.32. The Cohen d value for the difference is -0.0886. This is slightly more significant compared to the difference in pregnancy length, for which the Cohen d value is 0.02887.
 
-"""
+Codes attached below:
+
+```
 import math
 import nsfg
 import thinkstats2
@@ -32,4 +34,4 @@ others_mean
 
 CohenEffectSize(firsts.totalwgt_lb, others.totalwgt_lb)
 CohenEffectSize(firsts.prglngth, others.prglngth)
-"""
+```
