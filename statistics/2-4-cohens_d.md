@@ -1,8 +1,8 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
-First babies tend to be slightly lighter than other babies. The average weight of firstborn babies seen from this dataset is at 7.2 lbs while the average weight of other babies are 7.32. The Cohen d value for the difference is -0.0886. This is slightly more significant compared to the difference in pregnancy length, for which the Cohen d value is 0.02887.
+>First babies tend to be slightly lighter than other babies. The average weight of firstborn babies seen from this dataset is at 7.20 lbs while the average weight of other babies are 7.32. The Cohen d value for the difference is -0.0886. This is slightly more significant compared to the difference in pregnancy length, for which the Cohen d value is 0.02887.
 
-Codes attached below:
+>Codes attached below:
 
 ```
 import math
