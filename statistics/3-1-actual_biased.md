@@ -4,21 +4,11 @@
 > Code below shows the calculations. 
 
 ```
-"""Reading in the data file"""
-def ReadFile(dct_file='2002FemPreg.dct',
-                dat_file='2002FemPreg.dat.gz'):
-    """Reads the NSFG pregnancy data.
-    
-    dct_file: string file name
-    dat_file: string file name
-    
-    returns: DataFrame
-    """
+"""Reading in and storing the data file"""
+def ReadFile(dct_file='2002FemPreg.dct', dat_file='2002FemPreg.dat.gz'):
     dct = thinkstats2.ReadStataDct(dct_file)
     df = dct.ReadFixedWidth(dat_file, compression='gzip')
-    #CleanFemPreg(df)
     return df
-
 FemResp = ReadFile(dct_file='2002FemResp.dct', dat_file = "2002FemResp.dat.gz")
 
 """Use the NSFG respondent variable NUMKDHH to construct the actual distribution for the number of children under 18 in the household."""
@@ -34,7 +24,6 @@ def BiasPmf(pmf, label):
         
     new_pmf.Normalize()
     return new_pmf
-
 NK_Bpmf = BiasPmf(NK_pmf, label = 'Biased')
 NK_Bpmf
 
@@ -45,7 +34,6 @@ thinkplot.Show(xlabel='Total Children', ylabel='PMF')
 
 UnBiasedMean = NK_pmf.Mean()
 BiasedMean = NK_Bpmf.Mean()
-
 UnBiasedMean
 BiasedMean
 
