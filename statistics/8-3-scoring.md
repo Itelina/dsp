@@ -20,7 +20,7 @@ def GoalEstimates(lam=2):
 Write another function that simulates many games, stores the estimates of lam, then computes their mean error and RMSE. Is this way of making an estimate biased? Plot the sampling distribution of the estimates and the 90% confidence interval. What is the standard error? What happens to sampling error for increasing values of lam?
 
 ```
-def GameEstimates(lam=2, m=100):
+def GameEstimates(lam=2, m=10000):
     Scores =[]
     for i in range(m):
         goals = GoalEstimates()
@@ -29,13 +29,11 @@ def GameEstimates(lam=2, m=100):
     print('RMSE L', RMSE(Scores, lam))
     print('Mean Error L', MeanError(Scores, lam))
     
-    #pmf = thinkstats2.Pmf(Scores)
-    #thinkplot.Hist(pmf)
-    #thinkplot.Show(xlabel='Estimated Scores', ylabel='Frequency')
+    pmf = thinkstats2.Pmf(Scores)
+    thinkplot.Hist(pmf)
+    thinkplot.Show(xlabel='Estimated Scores', ylabel='Frequency')
     
     cdf = thinkstats2.Cdf(estimates)
-    #thinkplot.Cdf(cdf)
-    #thinkplot.Show(xlabel='Estimated Scores', ylabel='CDF')
     ci = cdf.Percentile(10), cdf.Percentile(90)
     print('confidence interval', ci)
 ```
