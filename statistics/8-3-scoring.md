@@ -25,7 +25,6 @@ def GameEstimates(lam=2, m=10000):
     for i in range(m):
         goals = GoalEstimates()
         Scores.append(goals)
-    print(Scores)
     print('RMSE L', RMSE(Scores, lam))
     print('Mean Error L', MeanError(Scores, lam))
     
