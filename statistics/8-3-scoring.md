@@ -13,12 +13,15 @@ def GoalEstimates(lam=2):
     while playtime <= 1:
         time = random.expovariate(lam)
         playtime += time
+        if playtime > 1:
+            break
         goals += 1
     return goals
 ```
     
 Write another function that simulates many games, stores the estimates of lam, then computes their mean error and RMSE. Is this way of making an estimate biased? Plot the sampling distribution of the estimates and the 90% confidence interval. What is the standard error? What happens to sampling error for increasing values of lam?
 
+> The standard error is around 1.4. Sampling error decreases with increasing values of lam.
 ```
 def GameEstimates(lam=2, m=10000):
     Scores =[]
@@ -27,15 +30,9 @@ def GameEstimates(lam=2, m=10000):
         Scores.append(goals)
     print('RMSE L', RMSE(Scores, lam))
     print('Mean Error L', MeanError(Scores, lam))
-    
-    pmf = thinkstats2.Pmf(Scores)
-    thinkplot.Hist(pmf)
-    thinkplot.Show(xlabel='Estimated Scores', ylabel='Frequency')
-    
-    cdf = thinkstats2.Cdf(estimates)
+    cdf = thinkstats2.Cdf(Scores)
     ci = cdf.Percentile(10), cdf.Percentile(90)
     print('confidence interval', ci)
 ```
-
 
 ---
