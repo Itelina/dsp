@@ -44,6 +44,10 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 How do frequentist and Bayesian statistics compare?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+> Frequentists use the approach that focuses on P(D|H), the probability of the data, given the hypothesis. That is, this approach treats data as random (if you repeated the study, the data might come out differently), and hypotheses as fixed (the hypothesis is either true or false, and so has a probability of either 1 or 0, you just don’t know for sure which it is). This approach is called frequentist because it’s concerned with the frequency with which one expects to observe the data, given some hypothesis about the world. 
+
+> Bayesian statistics focuses on P(H|D), the probability of the hypothesis, given the data. That is, this approach treats the data as fixed (these are the only data you have) and hypotheses as random (the hypothesis might be true or false, with some probability between 0 and 1). This approach is called Bayesian because you need to use Bayes’ Theorem to calculate P(H|D).
+
+> A frequentist basically says, “The world is a certain way, but I don’t know how it is. Further, I can’t necessarily tell how the world is just by collecting data, because data are always finite and noisy. So I’ll use statistics to line up the alternative possibilities, and see which ones the data more or less rule out.” A Bayesian basically says, “I don’t know how the world is. All I have to go on is finite data. So I’ll use statistics to infer something from those data about how probable different possible states of the world are.” 
 
 ---
