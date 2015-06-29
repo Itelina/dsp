@@ -27,7 +27,15 @@ Communicate the problem, how you solved it, and the solution, within each of the
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+> We can solve this using Baye's Theorem. The question is, what is the probability that Elvis was an identical twin, given that his twin brother died at birth.
+
+> P(A|B) = P(B|A) P(A) / P(B)
+
+> where A = Event that the person is an identical twin, and B = Event that the person has a twin brother that died at birth. 
+
+> P(B|A) = Probability that a twin death occurrs at birth for identical twins.
+> P(A) = Probability that the person is an identical twin.
+> P(B) = Probability that twin death occurred at birth.
 
 ---
 
